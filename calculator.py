@@ -26,9 +26,6 @@ def calculator():
     ## Recibir dos inputs con los valores
     ## Necesita Preguntarle al usuario que operacion realizar
     ## Y necesita realizar la operacion de acuerdo a lo anterior
-    num_1 = float(input("Introduzca el primer numero: "))
-    num_2 = float(input("Introduzca el segundo numero: "))
-
     operacion = int(
         input(
             """
@@ -40,8 +37,9 @@ def calculator():
         """
         )
     )
-    print(num_1, num_2, operacion)
-    ## ==
+    num_1 = float(input("Introduzca el primer numero: "))
+    num_2 = float(input("Introduzca el segundo numero: "))
+
     if operacion == 1:
         result_divider()
         suma(num_1, num_2)
